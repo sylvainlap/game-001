@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://demfsd2h0porm"]
+[gd_scene load_steps=8 format=3 uid="uid://demfsd2h0porm"]
 
 [ext_resource type="Texture2D" uid="uid://dtc7scqgmbg03" path="res://art/playerGrey_up1.png" id="1_cc4yf"]
+[ext_resource type="Script" path="res://player.gd" id="1_if6y6"]
 [ext_resource type="Texture2D" uid="uid://dq04mgoh3ye2k" path="res://art/playerGrey_up2.png" id="2_5xmkd"]
 [ext_resource type="Texture2D" uid="uid://ceo2xvai2ry2a" path="res://art/playerGrey_walk1.png" id="3_7cs3g"]
 [ext_resource type="Texture2D" uid="uid://dggguns8pn4xn" path="res://art/playerGrey_walk2.png" id="4_n1jn4"]
@@ -36,14 +37,14 @@ height = 16.0
 
 [node name="Player" type="Area2D"]
 position = Vector2(-1, 0)
+script = ExtResource("1_if6y6")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_kofiu")
 animation = &"up"
-frame = 1
-frame_progress = 0.848743
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_1a4vl")
