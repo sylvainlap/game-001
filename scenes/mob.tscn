@@ -58,7 +58,7 @@ metadata/_edit_group_ = true
 texture_filter = 1
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_d3um7")
-animation = &"slime"
+animation = &"ghost"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_l6dv5")
